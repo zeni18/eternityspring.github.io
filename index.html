@@ -4,6 +4,62 @@
 <head>
   <meta charset="UTF-8">
   <title>源泉</title>
+  <style>
+    .load{
+      width:100%;
+      height:100%;
+      position: fixed;
+      background: #1fa67a;
+      z-index: 10;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 30%;
+      color: #999;
+    }
+    .loading{
+      width: 50px;
+      height: 50px;
+      position: relative;
+      margin: 0 auto;
+    }
+    .double-bounce1, .double-bounce2 {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-animation: bounce 2.0s infinite ease-in-out;
+      animation: bounce 2.0s infinite ease-in-out;
+    }
+    .double-bounce2 {
+      -webkit-animation-delay: -1.0s;
+      animation-delay: -1.0s
+    }
+
+    @-webkit-keyframes bounce {
+      0%, 100% {
+        -webkit-transform: scale(0)
+      }
+
+      50% {
+        -webkit-transform: scale(1)
+      }
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: scale(0);
+        -webkit-transform: scale(0)
+      }
+
+      50% {
+        transform: scale(1);
+        -webkit-transform: scale(1)
+      }
+    }
+  </style>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -16,6 +72,12 @@
 </head>
 
 <body>
+  <div class="load">
+    <div class="loading">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
   <div class="wesley-intr text-center">
     <div class="section screen-one" id="section0">
       <h1>源&emsp;泉</h1>
@@ -47,7 +109,7 @@
      <p>简单的说，音乐、设计、排版构成了我的工作和学习</p>
      <p>会不断追求完善,算是个完美主义</p>
     </div>
-    <div class="section screen-three" id="section1">
+    <div class="section screen-three" id="section2">
       <div class="section-header">
         <h2>
           <span></span>Skills<span></span>
@@ -72,7 +134,7 @@
         </div>
       </div>
     </div>
-    <div class="section screen-four" id="section1">
+    <div class="section screen-four" id="section3">
       <div class="section-header">
         <h2>
           <span></span>Contact<span></span>
@@ -119,7 +181,11 @@
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
   <script type="text/javascript" src="js/circles.min.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
-
+  <script>
+    $(document).ready(function () {
+      $('.load').hide();
+    });
+  </script>
 </body>
 
 </html>
