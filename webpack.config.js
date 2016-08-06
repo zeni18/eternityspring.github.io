@@ -9,17 +9,23 @@ module.exports = {
     ],
     output: {
         path: './dist',
-        filename: "./bundle.js"
+        filename: "./bundle.js",
+        publicPath: "/assets/"
     },
     module: {
         loaders: [
             {
                 test: /\.scss$/,
                 loaders: ["style", "css", "sass"]
+            },
+            {
+                test: /\.html$/,
+                loader: "raw-loader" // loaders: ['raw-loader'] is also perfectly acceptable.
             }
         ]
     },
     plugins:[
+        new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({                        //根据模板插入css/js等生成最终HTML
             favicon:'./src/favicon.ico', //favicon路径
             filename:'/index.html',    //生成的html存放路径，相对于 path
@@ -36,12 +42,7 @@ module.exports = {
                 warnings: false
             },
             except: ['$super', '$', 'exports', 'require']    //排除关键字
-        }),
-        new CopyWebpackPlugin([
-            {
-                from: 'src/images/**/*', to: '/dist/images'
-            }
-        ])
+        })
     ],
     devServer: {
         proxy: {
