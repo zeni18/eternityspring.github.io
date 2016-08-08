@@ -29,3 +29,12 @@ h2{
 .text-light{
   color: $light;
 }
+.progress{
+  position: relative;
+  background: $border;
+  height: 5px;
+  .progress-bar{
+    height:100%;
+    background: $light;
+  }
+}
