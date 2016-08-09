@@ -3,14 +3,16 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: [
-        'webpack/hot/only-dev-server',
-        "./src/js/entry.js",
-    ],
+    entry: {
+        // libs:['zepto'],
+        bundle:[
+            'webpack/hot/only-dev-server',
+            "./src/js/entry.js",
+        ]
+    },
     output: {
         path: './dist',
-        filename: "./bundle.js",
-        publicPath: "/assets/"
+        filename: "[name].js"
     },
     module: {
         loaders: [
@@ -37,12 +39,12 @@ module.exports = {
                 collapseWhitespace:true    //删除空白符与换行符
             }
         }),
-        new webpack.optimize.UglifyJsPlugin({    //压缩代码webpack内置的
+        /*new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
             },
-            except: ['$super', '$', 'exports', 'require']    //排除关键字
-        })
+            except: ['$super', '$', 'exports', 'require']
+        })*/
     ],
     devServer: {
         proxy: {
@@ -51,6 +53,7 @@ module.exports = {
                 secure: false
             }
         },
-        hot: true
+        hot: true,
+        outputPath:'/dist'
     }
 };

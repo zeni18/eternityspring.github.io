@@ -68,8 +68,55 @@ $text-gray:#757575;
     }
   }
 }
+.section-header{
+  .header{
+    height:100vh;
+  }
+  .section-content{
+    height:100vh;
+  }
+  .avatar{
+    border-radius: 20rem;
+    max-width:200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .name{
+    font-size:2rem;
+    font-weight: 200;
+    margin-top:1rem;
+    margin-bottom: 4rem;
+  }
+  .name-slogan{
+    position: relative;
+    top:-2rem;
+  }
+  .description{
+    font-size:1.2rem;
+    margin-bottom: 2rem;
+  }
+  .contact-info{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    border-top:2px solid $border;
+    h4{
+      font-size:1rem;
+      margin:1.5rem 0;
+    }
+    .info{
+      line-height:1rem;
+    }
+  }
+  address{
+    font-style: normal;
+    line-height: 1rem;
+  }
+}
 .experience{
   margin-left:2px;
+  margin-top: 1rem;
   padding-left:24px;
   border-left:2px solid $border;
   .item{
@@ -131,51 +178,22 @@ $text-gray:#757575;
     background: $bg1;
   }
 }
-
-.section-header{
-  .header{
-    height:100vh;
-  }
-  .section-content{
-    height:100vh;
-  }
-  .avatar{
-    border-radius: 20rem;
-    max-width:200px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  .name{
-    font-size:2rem;
-    font-weight: 200;
-    margin-top:1rem;
-    margin-bottom: 4rem;
-  }
-  .name-slogan{
-    position: relative;
-    top:-2rem;
-  }
-  .description{
-    font-size:1.2rem;
-    margin-bottom: 2rem;
-  }
-  .contact{
-    position: absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    border-top:2px solid $border;
-    h4{
-      font-size:1rem;
-      margin:1.5rem 0;
-    }
-    .info{
-      line-height:1rem;
+.usually{
+  .item{
+    margin-right:3rem;
+    margin-bottom:1rem;
+    line-height: 2rem;
+    h3{
+      margin-top:0.5rem;
+      margin-bottom: 0.8rem;
+      line-height: 1rem;
     }
   }
-  address{
-    font-style: normal;
-    line-height: 1rem;
+}
+.contact{
+  h4{
+    margin-top:0.3rem;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -197,7 +215,7 @@ $text-gray:#757575;
     .section-content{
       height:auto;
     }
-    .contact{
+    .contact-info{
       position: relative;
     }
   }
@@ -213,6 +231,24 @@ $text-gray:#757575;
     }
     .section-content-bg{
       background: $bg2;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .section{
+    .header{
+      padding:15px;
+    }
+    .section-content{
+      padding:15px;
+    }
+  }
+  .section-header{
+    .name-slogan{
+      top:0;
+    }
+    h2{
+      font-size: 2.5rem;
     }
   }
 }
