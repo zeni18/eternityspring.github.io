@@ -4,6 +4,6 @@
     npm install
 ### 运行编译
     npm run dev
-访问：http://localhost:8080/assets/
+访问：http://localhost:8080/
 
 注意：这里用了很多css3，并不支持低版本ie。

@@ -17,39 +17,39 @@
           <div class="avatar">
             <img src="./assets/images/logo.png" alt="logo" class="img-responsive">
           </div>
-          <h1 class="name text-center">王世霖</h1>
+          <h1 class="name text-center">{{userInfo.name}}</h1>
         </div>
       </header>
       <div class="section-content">
         <div class="content-box">
           <div class="name-slogan">
-            <h2><span class="text-light">wesley</span>&nbsp;<span>wang</span></h2>
-            <div class="description">追求专业与卓越前端开发者</div>
+            <h2><span class="text-light">{{userInfo.lastName}}</span>&nbsp;{{userInfo.firstName}}</h2>
+            <div class="description">{{userInfo.slogan}}</div>
           </div>
           <div class="contact-info">
             <div class="row">
               <div class="col-md-6 col-lg-3">
                 <div class="item">
                   <h4>Location</h4>
-                  <address>Shanghai·China</address>
+                  <address>{{userInfo.location}}</address>
                 </div>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a class="item">
+                <div class="item">
                   <h4>QQ</h4>
-                  <div class="info">790313188</div>
-                </a>
+                  <div class="info">{{userInfo.qq.number}}</div>
+                </div>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a class="item">
+                <a class="item" href="{{userInfo.website}}" target="_blank">
                   <h4>Website</h4>
-                  <div class="info">http://79px.com</div>
+                  <div class="info">{{userInfo.website}}</div>
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a class="item">
+                <a class="item" href="mailto:{{userInfo.website}}">
                   <h4>Email</h4>
-                  <div class="info">eternityspring@gmail.com</div>
+                  <div class="info">{{userInfo.email}}</div>
                 </a>
               </div>
             </div>
@@ -70,9 +70,7 @@
       </header>
       <div class="section-content">
         <div class="intro">
-          <p><span class="text-light">1992年</span>8月生于<span class="text-light">湖北</span>·十堰。毕业三年工作四年。为人低调，做事务实踏实。喜欢简单的东西。习惯听歌写代码。</p>
-          <p>性格偏内向。但在熟悉的朋友面前会无话不谈。习惯于有条理的做事说话。</p>
-          <p>没事的时候，喜欢打打dota，下下象棋，写写代码做点小东西。</p>
+          <p v-for="intro in userInfo.intro">{{{intro}}}</p>
         </div>
       </div>
     </div>
@@ -89,44 +87,14 @@
       </header>
       <div class="section-content">
         <div class="experience">
-          <div class="item">
+          <div class="item" v-for="e in userInfo.experience">
             <div class="row">
               <div class="col-md-5">
-                <div class="time">2012-2013年</div>
-                <div class="title">先后在湖北武汉/十堰工作</div>
-                <div class="description">其中包括1年的实习时间</div>
+                <div class="time">{{e.time}}</div>
+                <div class="title">{{e.title}}</div>
+                <div class="description">{{e.intro}}</div>
               </div>
-              <div class="col-md-7">毕业于武汉软件工程职业技术学院。先后在武汉和老家湖北十堰工作一年。期间，主要精力用于钻研一个基于php的cms：drupal。与此同时，学会了drupal以及wordpress之类的cms的常用操作。</div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="time">2014年</div>
-                <div class="title">上海传斐信息技术有限公司</div>
-                <div class="description">前端开发</div>
-              </div>
-              <div class="col-md-7">14年年初，来到上海，就职于传斐科技信息有限公司。从事前端开发方面工作。期间，主要精力放在基础的js知识学习。同时也学习了一些产品设计的思维与技巧。</div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="time">2015年-今</div>
-                <div class="title">上海传斐信息技术有限公司</div>
-                <div class="description">前端开发</div>
-              </div>
-              <div class="col-md-7">15年年初，加入北京云知声信息技术有限公司上海分舵。从事前端开发至今。期间，大部分精力都用户钻研前端的工程化。代码从css转到less，代码管理工具从svn转到git。学习了nodejs，熟悉了gulp。基于gulp做了很多前端自动化构建的工具。同时，也学习和使用了一些前端框架如：angular、vuejs等。</div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="time">自毕业后</div>
-                <div class="title">个人网站</div>
-                <div class="description">全栈开发的学习与研究</div>
-              </div>
-              <div class="col-md-7">自毕业后一直创建与维护一个个人网站。在学nodejs之前，是基于drupal做的。自己独立开发的主题，广受欢迎。在学习了nodejs后，后端基于nodejs的express框架前端基于google的angularjs框架重做了一遍。全站为单页面应用。历时1年。同时也学会了mongodb的一些常规操作和配置。</div>
+              <div class="col-md-7">{{e.description}}</div>
             </div>
           </div>
         </div>
@@ -145,33 +113,13 @@
       </header>
       <div class="section-content">
         <div class="row skill">
-          <div class="col-md-6">
+          <div class="col-md-6" v-for="s in userInfo.skill">
             <div class="item">
               <div class="text-info">
-                <span class="num text-light">50%</span>PhotoShop
+                <span class="num text-light">{{s.percent}}</span>{{s.name}}
               </div>
               <div class="progress">
-                <div class="progress-bar" style="width: 50%;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="item">
-              <div class="text-info">
-                <span class="num text-light">50%</span>Css
-              </div>
-              <div class="progress">
-                <div class="progress-bar" style="width: 50%;"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="item">
-              <div class="text-info">
-                <span class="num text-light">50%</span>JavaScript
-              </div>
-              <div class="progress">
-                <div class="progress-bar" style="width: 50%;"></div>
+                <div class="progress-bar" style="width:{{s.percent}}"></div>
               </div>
             </div>
           </div>
@@ -191,32 +139,11 @@
       </header>
       <div class="section-content">
         <div class="row usually">
-          <div class="col-lg-4 col-md-6">
-            <div class="item">
+          <div class="col-lg-4 col-md-6" v-for="u in userInfo.usually">
+            <div class="item" title="{{u.link}}">
               <i class="fa fa-github"></i>
-              <h3 class="text-light">Github</h3>
-              <p>分享一些我的小作品 结交志同道合的朋友</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="item">
-              <i class="fa fa-github"></i>
-              <h3 class="text-light">Github</h3>
-              <p>分享一些我的小作品</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="item">
-              <i class="fa fa-github"></i>
-              <h3 class="text-light">Github</h3>
-              <p>分享一些我的小作品</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="item">
-              <i class="fa fa-github"></i>
-              <h3 class="text-light">Github</h3>
-              <p>分享一些我的小作品</p>
+              <h3 class="text-light">{{u.name}}</h3>
+              <p>{{u.description}}</p>
             </div>
           </div>
         </div>
@@ -239,25 +166,25 @@
             <div class="col-md-6 col-lg-3">
               <div class="item">
                 <h4>Location</h4>
-                <address>Shanghai·China</address>
+                <address>{{userInfo.location}}</address>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
-              <a class="item">
+              <div class="item">
                 <h4>QQ</h4>
-                <div class="info">790313188</div>
-              </a>
+                <div class="info">{{userInfo.qq.number}}</div>
+              </div>
             </div>
             <div class="col-md-6 col-lg-3">
-              <a class="item">
+              <a class="item" href="{{userInfo.website}}" target="_blank">
                 <h4>Website</h4>
-                <div class="info">http://79px.com</div>
+                <div class="info">{{userInfo.website}}</div>
               </a>
             </div>
             <div class="col-md-6 col-lg-3">
-              <a class="item">
+              <a class="item" href="mailto:{{userInfo.website}}">
                 <h4>Email</h4>
-                <div class="info">eternityspring@gmail.com</div>
+                <div class="info">{{userInfo.email}}</div>
               </a>
             </div>
           </div>
@@ -266,5 +193,7 @@
     </div>
   </section>
 </div>
+<script type="text/javascript" src="./assets/libs/js/zepto.min.js"></script>
+<script type="text/javascript" src="./assets/libs/js/vue.min.js"></script>
 </body>
 </html>

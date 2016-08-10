@@ -1,10 +1,12 @@
 {
   "name":"王世霖",
-  "englishFirstName":"wang",
-  "englishLastName":"wesley",
+  "firstName":"wang",
+  "lastName":"wesley",
   "slogan":"追求专业与卓越前端开发者",
   "location":"Shanghai·China",
-  "qq":"790313188",
+  "qq":{
+    "number":"790313188"
+  },
   "website":"http://79px.com",
   "email":"eternityspring@gmail.com",
   "intro":[
@@ -54,13 +56,46 @@
     {
       "name":"Nodejs",
       "percent":"60%"
+    },
+    {
+      "name":"MongoDB",
+      "percent":"50%"
+    },
+    {
+      "name":"PHP",
+      "percent":"30%"
     }
   ],
   "usually":[
     {
       "name":"GitHub",
-      "link":"http://github.com",
+      "link":"https://github.com",
       "description":"分享一些我的小作品 结交志同道合的朋友"
+    },
+    {
+      "name":"知乎",
+      "link":"https://www.zhihu.com/",
+      "description":"搜索解决一些疑问 探索新奇"
+    },
+    {
+      "name":"MDN",
+      "link":"https://developer.mozilla.org",
+      "description":"查阅一些技术文档"
+    },
+    {
+      "name":"Behance",
+      "link":"https://www.behance.net",
+      "description":"寻找灵感探索新奇"
+    },
+    {
+      "name":"Dribbble",
+      "link":"https://dribbble.com",
+      "description":"寻找灵感探索新奇"
+    },
+    {
+      "name":"CodePen",
+      "link":"http://codepen.io/",
+      "description":"探索和分享好的代码"
     }
   ]
 }

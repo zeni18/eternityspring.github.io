@@ -4,14 +4,13 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        // libs:['zepto'],
         bundle:[
             'webpack/hot/only-dev-server',
             "./src/js/entry.js",
         ]
     },
     output: {
-        path: './dist',
+        path: __dirname + 'dist',
         filename: "[name].js"
     },
     module: {
@@ -39,12 +38,12 @@ module.exports = {
                 collapseWhitespace:true    //删除空白符与换行符
             }
         }),
-        /*new webpack.optimize.UglifyJsPlugin({
+        new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
             },
             except: ['$super', '$', 'exports', 'require']
-        })*/
+        })
     ],
     devServer: {
         proxy: {

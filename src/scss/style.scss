@@ -28,6 +28,13 @@ $text-gray:#757575;
     display: flex;
     flex-flow: row wrap;
   }
+  a{
+    color: $color1;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
   .header{
     width:30%;
     padding: 4rem 5rem;
