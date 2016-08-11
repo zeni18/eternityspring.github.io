@@ -6,4 +6,4 @@
     npm run dev
 访问：http://localhost:8080/
 
-注意：这里用了很多css3，并不支持低版本ie。目前只自测过chrome。后续会在http://79px.com做一个相关文档，介绍本项目的详细制作过程。
+注意：这里用了很多css3，并不支持低版本ie。目前只自测过chrome。后续会在http://79px.com 做一个相关文档，介绍本项目的详细制作过程。
