@@ -8,6 +8,7 @@ $text-gray:#757575;
 
 @import "common";
 @import "gird";
+
 .section-bg{
   position: absolute;
   width:50%;
@@ -31,6 +32,7 @@ $text-gray:#757575;
   a{
     color: $color1;
     text-decoration: none;
+    display: inline-block;
     &:hover{
       text-decoration: none;
     }
@@ -198,6 +200,7 @@ $text-gray:#757575;
   }
 }
 .contact{
+  margin-bottom:2rem;
   h4{
     margin-top:0.3rem;
     margin-bottom: 0.8rem;
@@ -257,5 +260,73 @@ $text-gray:#757575;
     h2{
       font-size: 2.5rem;
     }
+  }
+}
+
+.inShow{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: inShow;
+  animation-name: inShow;
+}
+
+@-webkit-keyframes inShow {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translateY(50px) scale(0.9);
+    visibility: visible;
+    opacity:0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity:1;
+  }
+}
+
+@keyframes inShow {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translateY(50px) scale(0.9);
+    visibility: visible;
+    opacity:0;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity:1;
+  }
+}
+
+
+
+.progressShow{
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: progressShow;
+  animation-name: progressShow;
+}
+
+@-webkit-keyframes progressShow {
+  from {
+    width:0;
+  }
+
+  to {
+  }
+}
+
+@keyframes progressShow {
+  from {
+    width:0;
+  }
+
+  to {
   }
 }
