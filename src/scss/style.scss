@@ -262,7 +262,16 @@ $text-gray:#757575;
     font-size: 2.5rem;
   }
 }
-
+/* print */
+@media print{
+  .col-md-6{
+    width:50%;
+  }
+  .no-print{
+    display: none;
+  }
+}
+/* animate */
 .inShow{
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
