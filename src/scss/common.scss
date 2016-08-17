@@ -29,6 +29,9 @@ h2{
 .text-light{
   color: $light;
 }
+.hide{
+  display: none;
+}
 .progress{
   position: relative;
   background: $border;

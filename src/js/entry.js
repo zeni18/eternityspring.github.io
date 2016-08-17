@@ -13,7 +13,6 @@ var vm = new Vue({
       type:'get',
       url:'assets/resume.json',
       success:function (data) {
-        console.log(data);
         vm.userInfo = data;
         vm.loading = true;
       }

@@ -270,6 +270,13 @@ $text-gray:#757575;
   .no-print{
     display: none;
   }
+  .show-print-block{
+    display: block!important;
+    opacity: 1!important;
+  }
+  .section .section-content{
+    padding: 0 20px;
+  }
 }
 /* animate */
 .inShow{
