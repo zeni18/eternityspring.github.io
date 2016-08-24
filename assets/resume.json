@@ -70,12 +70,12 @@
   "usually":[
     {
       "name":"GitHub",
-      "link":"https://github.com",
+      "link":"https://github.com/eternityspring",
       "description":"分享一些我的小作品 结交志同道合的朋友"
     },
     {
       "name":"知乎",
-      "link":"https://www.zhihu.com/",
+      "link":"https://www.zhihu.com/people/790313188",
       "description":"搜索解决一些疑问 探索新奇"
     },
     {
@@ -85,17 +85,16 @@
     },
     {
       "name":"Behance",
-      "link":"https://www.behance.net",
       "description":"寻找灵感探索新奇"
     },
     {
       "name":"Dribbble",
-      "link":"https://dribbble.com",
+      "link":"https://dribbble.com/eternityspring",
       "description":"寻找灵感探索新奇"
     },
     {
       "name":"CodePen",
-      "link":"http://codepen.io/",
+      "link":"http://codepen.io/eternityspring",
       "description":"探索和分享好的代码"
     }
   ]
