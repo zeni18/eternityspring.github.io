@@ -4,7 +4,7 @@
 ### 初始化项目
     npm install
 ### 运行编译
-    npm run dev
+    npm start
 访问：http://localhost:8080/
 ### 在线预览
 [https://eternityspring.github.io](https://eternityspring.github.io)
