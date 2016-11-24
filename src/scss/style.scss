@@ -195,6 +195,10 @@ $text-gray:#757575;
     .content{
       text-indent: 2rem;
     }
+    ul{
+      padding-left: 15px;
+      margin-top: 0;
+    }
   }
 }
 .skill{
@@ -315,6 +319,9 @@ $text-gray:#757575;
   }
   .section .section-content{
     padding: 0 20px;
+  }
+  .section-header .name{
+    margin-bottom:1.5rem;
   }
 }
 /* animate */
