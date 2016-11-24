@@ -147,7 +147,10 @@ $text-gray:#757575;
     bottom:0;
     left:0;
     width:100%;
-    border-top:2px solid $border;
+    &>div:first-child{
+      border-bottom:2px dashed $border;
+      padding-bottom: 1rem;
+    }
     h4{
       font-size:1rem;
       margin:1.5rem 0;
@@ -318,12 +321,37 @@ $text-gray:#757575;
     opacity: 1!important;
   }
   .section .section-content{
-    padding: 0 20px;
+    padding: 0 12px;
   }
-  .section-header .name{
-    margin-bottom:1.5rem;
+  .section-header{
+    .description{
+      text-align: center;
+    }
+    .contact-info{
+      &>div:first-child{
+        border-bottom:none;
+        padding-bottom:0;
+      }
+      h4{
+        width: 80px;
+        float: left;
+        margin: 10px 0;
+        line-height: 1rem;
+      }
+      .info{
+        padding: 10px 0 10px 80px;
+        line-height: 1rem;
+      }
+      a{
+        display: block;
+      }
+    }
+    .name{
+      margin-bottom:1rem;
+    }
   }
 }
+
 /* animate */
 .inShow{
   -webkit-animation-duration: 1s;
