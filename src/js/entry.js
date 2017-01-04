@@ -1,5 +1,4 @@
-require("!style!css!sass!./../scss/style.scss");
-
+import './../scss/style.scss';
 var vm = new Vue({
   el: '#app',
   data: {

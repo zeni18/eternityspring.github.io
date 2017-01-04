@@ -41,3 +41,13 @@ h2{
     background: $light;
   }
 }
+
+/* loading */
+body {
+  background: $bg1;
+}
+.loading {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+}
