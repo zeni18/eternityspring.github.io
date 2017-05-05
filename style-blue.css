@@ -1,12 +1,15 @@
 /**
-**black theme
-$bg1:#2b2c2c;
+black theme
+ */
+/*$bg1:#2b2c2c;
 $bg2:#292a2a;
 $color1:#979899;
 $light:#e0a80d;
 $border:#404242;
-$text-gray:#757575;
-*/
+$text-gray:#757575;*/
+/**
+blue theme
+ */
 html, body, header, section, div, address, p {
   box-sizing: border-box;
   margin: 0;
@@ -83,16 +86,19 @@ body {
   [class*="col-lg"], [class*="col-md"] {
     width: 100%; } }
 
-.github {
+.useful-link {
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 5; }
-  .github img {
+  .useful-link img {
     width: 14px;
     vertical-align: middle;
     margin-right: 5px; }
-  .github .github-button {
+  .useful-link a {
+    float: left;
+    margin-left: 20px; }
+  .useful-link .github-button {
     font-size: 14px;
     border: 1px solid #d5d5d5;
     border-radius: 3px;
@@ -107,15 +113,20 @@ body {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#eeeeee')";
     display: block;
     text-decoration: none; }
-    .github .github-button:hover {
+    .useful-link .github-button:hover {
       background-color: #ddd;
       background-image: -webkit-linear-gradient(top, #eee, #ddd);
       background-image: -moz-linear-gradient(top, #eee, #ddd);
       background-image: linear-gradient(to bottom, #eee, #ddd);
       border-color: #ccc;
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd')"; }
-    .github .github-button span {
+    .useful-link .github-button span {
       vertical-align: middle; }
+  .useful-link .theme-link {
+    width: 24px;
+    height: 24px;
+    background: #777;
+    border-radius: 3px; }
 
 .section-bg {
   position: absolute;
