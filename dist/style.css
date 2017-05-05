@@ -1,15 +1,15 @@
 /**
 black theme
  */
-/*$bg1:#2b2c2c;
-$bg2:#292a2a;
-$color1:#979899;
-$light:#e0a80d;
-$border:#404242;
-$text-gray:#757575;*/
 /**
 blue theme
  */
+/*$bg1:#eaeaea;
+$bg2:#f3f3f3;
+$color1:#333;
+$light:#23abff;
+$border:#dbdbdb;
+$text-gray:#777;*/
 html, body, header, section, div, address, p {
   box-sizing: border-box;
   margin: 0;
@@ -22,8 +22,8 @@ html {
 body {
   font-size: 1rem;
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-  background: #eaeaea;
-  color: #333; }
+  background: #2b2c2c;
+  color: #979899; }
 
 h2 {
   font-size: 4rem;
@@ -39,22 +39,22 @@ h2 {
   text-align: center; }
 
 .text-light {
-  color: #23abff; }
+  color: #e0a80d; }
 
 .hide {
   display: none; }
 
 .progress {
   position: relative;
-  background: #dbdbdb;
+  background: #404242;
   height: 5px; }
   .progress .progress-bar {
     height: 100%;
-    background: #23abff; }
+    background: #e0a80d; }
 
 /* loading */
 body {
-  background: #eaeaea; }
+  background: #2b2c2c; }
 
 .loading {
   position: fixed;
@@ -125,7 +125,7 @@ body {
   .useful-link .theme-link {
     width: 24px;
     height: 24px;
-    background: #777;
+    background: #757575;
     border-radius: 3px; }
 
 .section-bg {
@@ -135,11 +135,11 @@ body {
   z-index: 1; }
 
 .section-header-bg {
-  background: #eaeaea;
+  background: #2b2c2c;
   left: 0; }
 
 .section-content-bg {
-  background: #f3f3f3;
+  background: #292a2a;
   left: 50%; }
 
 .section {
@@ -148,7 +148,7 @@ body {
     display: flex;
     flex-flow: row wrap; }
   .section a {
-    color: #333;
+    color: #979899;
     text-decoration: none;
     display: inline-block; }
     .section a:hover {
@@ -157,7 +157,7 @@ body {
     width: 30%;
     padding: 4rem 5rem;
     z-index: 2;
-    background: #eaeaea;
+    background: #2b2c2c;
     text-align: right; }
     .section .header .header-box {
       position: relative;
@@ -172,7 +172,7 @@ body {
   .section .section-content {
     width: 70%;
     padding: 4rem 3rem 4rem 5rem;
-    background: #f3f3f3;
+    background: #292a2a;
     z-index: 2; }
     .section .section-content .content-box {
       position: relative;
@@ -216,7 +216,7 @@ body {
   left: 0;
   width: 100%; }
   .section-header .contact-info > div:first-child {
-    border-bottom: 2px dashed #dbdbdb;
+    border-bottom: 2px dashed #404242;
     padding-bottom: 1rem; }
   .section-header .contact-info h4 {
     font-size: 1rem;
@@ -232,7 +232,7 @@ body {
   margin-left: 2px;
   margin-top: 1rem;
   padding-left: 24px;
-  border-left: 2px solid #dbdbdb; }
+  border-left: 2px solid #404242; }
   .experience .item {
     position: relative;
     line-height: 2rem;
@@ -243,19 +243,19 @@ body {
       position: absolute;
       top: 6px;
       left: -30px;
-      background: #23abff;
+      background: #e0a80d;
       border-radius: 5px;
       width: 10px;
       height: 10px;
-      box-shadow: 0 0 0 6px #dbdbdb; }
+      box-shadow: 0 0 0 6px #404242; }
     .experience .item .time {
       font-size: 0.8rem;
-      color: #777;
+      color: #757575;
       line-height: 1.6rem; }
     .experience .item .title {
       font-size: 1.2rem; }
     .experience .item .description {
-      color: #777; }
+      color: #757575; }
     .experience .item .content {
       text-indent: 2rem; }
     .experience .item ul {
@@ -275,16 +275,16 @@ body {
   margin-right: 1rem; }
 
 .section:nth-child(even) .header {
-  background: #f3f3f3; }
+  background: #292a2a; }
 
 .section:nth-child(even) .section-header-bg {
-  background: #f3f3f3; }
+  background: #292a2a; }
 
 .section:nth-child(even) .section-content {
-  background: #eaeaea; }
+  background: #2b2c2c; }
 
 .section:nth-child(even) .section-content-bg {
-  background: #eaeaea; }
+  background: #2b2c2c; }
 
 .usually .item {
   margin-right: 3rem;
@@ -315,13 +315,13 @@ body {
   .section-header .contact-info {
     position: relative; }
   .section:nth-child(even) .header {
-    background: #eaeaea; }
+    background: #2b2c2c; }
   .section:nth-child(even) .section-header-bg {
-    background: #eaeaea; }
+    background: #2b2c2c; }
   .section:nth-child(even) .section-content {
-    background: #f3f3f3; }
+    background: #292a2a; }
   .section:nth-child(even) .section-content-bg {
-    background: #f3f3f3; } }
+    background: #292a2a; } }
 
 @media (max-width: 768px) {
   .section .header {
