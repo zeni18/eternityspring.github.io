@@ -2,7 +2,7 @@
 一个追求专业的前端开发者。
 ## 简介
 ### 初始化项目
-	clone项目，进入dev分支
+clone项目，进入dev分支
     npm install
 ### 运行
     npm dev
@@ -21,6 +21,6 @@
 
 注意：这里用了很多css3，并不支持低版本ie。目前只自测过chrome。为了保护个人隐私，这里在展示的时候用的是网名，打印时候显示真实名字。
 ## 其他
-		基于vue-cli重构。master分支只用于预览。源码请到dev分支。
+基于vue-cli重构。master分支只用于预览。源码请到dev分支。
 ## License
 CC BY 4.0  [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
