@@ -24,7 +24,8 @@
   </svg>
 </div>
 <div class="main-container" v-show="loading" style="display: none;">
-  <div class="github no-print">
+  <div class="useful-link no-print">
+    <a class="theme-link" href="/index2.html"></a>
     <a class="github-button" href="https://github.com/eternityspring/eternityspring.github.io" title="查看源码">
       <img src="./assets/images/star.svg" alt="Github"><span>Star</span>
     </a>
@@ -71,7 +72,7 @@
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a class="item wow inShow" data-wow-delay="0.55s" href="mailto:{{userInfo.website}}">
+                <a class="item wow inShow" data-wow-delay="0.55s" href="mailto:{{userInfo.email}}">
                   <h4>Email</h4>
                   <div class="info">{{userInfo.email}}</div>
                 </a>
@@ -97,7 +98,7 @@
                 </a>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a class="item wow inShow" data-wow-delay="0.75s" href="mailto:{{userInfo.website}}">
+                <a class="item wow inShow" data-wow-delay="0.75s" href="{{userInfo.github}}" target="_blank">
                   <h4>Github</h4>
                   <div class="info">{{userInfo.github}}</div>
                 </a>
@@ -275,7 +276,7 @@
               </a>
             </div>
             <div class="col-md-6 col-lg-3">
-              <a class="item" href="mailto:{{userInfo.website}}">
+              <a class="item" href="mailto:{{userInfo.email}}">
                 <h4>Email</h4>
                 <div class="info">{{userInfo.email}}</div>
               </a>
