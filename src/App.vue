@@ -16,7 +16,7 @@
         </rect>
       </svg>
     </div>
-    <router-view/>
+    <router-view loadingStatus="loading" />
   </div>
 </template>
 

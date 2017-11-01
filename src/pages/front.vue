@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container" v-show="1" style="display: none;">
+  <div class="main-container" v-show="$parent.loading" style="display: none;">
     <div class="useful-link no-print">
       <!--<a class="theme-link" href="/index2.html"></a>-->
       <a class="github-button" href="https://github.com/eternityspring/eternityspring.github.io" title="查看源码">
@@ -276,7 +276,6 @@
     name: 'front',
     data() {
       return {
-        loading: false,
         userInfo: {
           exp:[],
           qq:{},
@@ -292,13 +291,12 @@
       var self = this;
       this.$http.get('/static/resume.json').then((res) =>{
         self.userInfo = res.body;
+        this.$parent.loading = true;
       });
     },
     methods:{
       calcDate(birthday){
         let birthdayDate = new Date(birthday);
-        console.log(birthday)
-        console.log(birthdayDate)
         let todyDate = new Date();
         return todyDate.getYear() - birthdayDate.getYear()
       }
