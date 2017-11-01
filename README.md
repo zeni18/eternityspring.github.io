@@ -3,6 +3,7 @@
 ## 简介
 ### 初始化项目
 clone项目，进入dev分支
+
     npm install
 ### 运行
     npm dev
