@@ -16,9 +16,10 @@
   "github":"https://github.com/eternityspring",
   "email":"eternityspring@gmail.com",
   "intro":[
-    "懂产品，会设计，会nodejs后端。熟悉和习惯restful的开发模式。熟悉angularjs和vue以及scss",
-    "善于发现和解决重复性的影响做事效率的问题，喜欢学习和尝试新技术。对用户体验有追求。爱折腾，没事的时候喜欢做点小东西。",
-    "有一个个人网站79px.com，和个人为主体的微信小程序'黄龙客栈'。"
+    "熟悉前端项目构建，有过基于angular和vue的大型产品开发经验。",
+    "喜欢开源，懂产品，会设计。可以做nodejs后端。熟悉和习惯restful的开发模式和基于git的版本管理。",
+    "熟悉angularjs和Vue 。常用scss和webpack。爱折腾。没事喜欢做做小东西。",
+    "有做过小程序和hybird APP。搜索“黄龙客栈”可以找到我的小程序*.*"
   ],
   "experience":[
     {
