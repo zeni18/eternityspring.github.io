@@ -3,11 +3,13 @@
   "sex":"男",
   "birthday":"1992-08-24",
   "workSince":"2012-11-01",
-  "exp":["专科毕业","年工作","年"],
+  "exp":["毕业","年工作","年"],
   "nickname":"源泉",
   "firstName":"wang",
   "lastName":"wesley",
   "slogan":"追求专业与卓越前端开发者",
+  "education":"专科",
+  "phone":15001827426,
   "location":"Shanghai·China",
   "qq":{
     "number":"790313188"
@@ -51,15 +53,15 @@
   "skill":[
     {
       "name":"Css",
-      "percent":"80%"
+      "percent":"90%"
     },
     {
       "name":"PhotoShop",
-      "percent":"70%"
+      "percent":"80%"
     },
     {
       "name":"JavaScript",
-      "percent":"60%"
+      "percent":"75%"
     },
     {
       "name":"Nodejs",
@@ -67,11 +69,19 @@
     },
     {
       "name":"MongoDB",
-      "percent":"50%"
+      "percent":"60%"
     },
     {
-      "name":"PHP",
-      "percent":"30%"
+      "name":"Bootstrap",
+      "percent":"95%"
+    },
+    {
+      "name":"Angular",
+      "percent":"75%"
+    },
+    {
+      "name":"Vue",
+      "percent":"85%"
     }
   ],
   "project":[

@@ -42,23 +42,23 @@
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                  <a class="item wow inShow" data-wow-delay="0.5s" :href="userInfo.website" target="_blank">
-                    <h4>经验</h4>
-                    <div class="info">{{userInfo.exp[0]+(calcDate(userInfo.workSince)-1)+userInfo.exp[1]+calcDate(userInfo.workSince)+userInfo.exp[2]}}</div>
-                  </a>
+                  <div class="item wow inShow" data-wow-delay="0.5s" :href="'mailto:'+userInfo.email">
+                    <h4>学历</h4>
+                    <div class="info">{{userInfo.education}}</div>
+                  </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                  <a class="item wow inShow" data-wow-delay="0.55s" :href="'mailto:'+userInfo.email">
-                    <h4>Email</h4>
-                    <div class="info">{{userInfo.email}}</div>
+                  <a class="item wow inShow" data-wow-delay="0.55s" :href="userInfo.website" target="_blank">
+                    <h4>经验</h4>
+                    <div class="info">{{userInfo.exp[0]+(calcDate(userInfo.workSince)-1)+userInfo.exp[1]+calcDate(userInfo.workSince)+userInfo.exp[2]}}</div>
                   </a>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 col-lg-3">
                   <div class="item wow inShow" data-wow-delay="0.6s">
-                    <h4>Location</h4>
-                    <address class="info">{{userInfo.location}}</address>
+                    <h4>Phone</h4>
+                    <address class="info">{{userInfo.phone}}</address>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -235,8 +235,8 @@
             <div class="row">
               <div class="col-md-6 col-lg-3">
                 <div class="item">
-                  <h4>Location</h4>
-                  <div class="info">{{userInfo.location}}</div>
+                  <h4>Phone</h4>
+                  <div class="info">{{userInfo.phone}}</div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-3">
@@ -246,10 +246,10 @@
                 </div>
               </div>
               <div class="col-md-6 col-lg-3">
-                <a class="item" :href="userInfo.website" target="_blank">
-                  <h4>Website</h4>
-                  <div class="info">{{userInfo.website}}</div>
-                </a>
+                <div class="item">
+                  <h4>Location</h4>
+                  <div class="info">{{userInfo.location}}</div>
+                </div>
               </div>
               <div class="col-md-6 col-lg-3">
                 <a class="item" :href="'mailto:'+userInfo.email">
