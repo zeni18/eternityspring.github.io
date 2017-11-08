@@ -263,7 +263,7 @@
             <h2 class="wow inShow">
               <span class="text-light">{{userInfo.lastName}}</span>&nbsp;{{userInfo.firstName}}
             </h2>
-            <div class="description wow inShow" data-wow-delay="0.05s">{{userInfo.slogan}}</div>
+            <div class="description wow inShow" data-wow-delay="0.05s">{{userInfo.slogan}}（{{userInfo.tips}}）</div>
           </div>
         </div>
       </div>
