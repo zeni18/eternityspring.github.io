@@ -21,6 +21,20 @@ $text-gray:#777;*/
 @import "common";
 @import "gird";
 
+ul{
+  padding-left: 15px;
+  margin-top: 0;
+  &.inline{
+    list-style: none;
+    margin-left: -0.5rem;
+    padding-left: 0;
+    li{
+      float: left;
+      display: inline-block;
+      padding: 0 0.5rem;
+    }
+  }
+}
 .useful-link{
   position: fixed;
   top:20px;
@@ -220,10 +234,6 @@ $text-gray:#777;*/
     }
     .content{
       text-indent: 2rem;
-    }
-    ul{
-      padding-left: 15px;
-      margin-top: 0;
     }
   }
 }

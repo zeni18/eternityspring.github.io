@@ -99,7 +99,13 @@
         </header>
         <div class="section-content">
           <div class="intro">
-            <p v-for="intro in userInfo.intro" v-html="intro"></p>
+            <p v-for="intro in userInfo.intro.content" v-html="intro"></p>
+          </div>
+          <div class="technology">
+            <ul class="inline">
+              <li><b>{{userInfo.intro.technology.title}}</b></li>
+              <li v-for="item in userInfo.intro.technology.content">{{item}}</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -125,7 +131,21 @@
                   <div class="title">{{item.title}}</div>
                   <div class="description">{{item.intro}}</div>
                 </div>
-                <div class="col-md-7" v-html="item.description"></div>
+                <div class="col-md-7">
+                  <div class="content">{{item.description}}</div>
+                  <div class="tips" v-for="tip in item.tips">
+                    <b>{{tip.title}}</b>
+                    <ul>
+                      <li v-for="list in tip.content">{{list}}</li>
+                    </ul>
+                  </div>
+                  <div class="technology" v-for="tech in item.technology">
+                    <b>{{tech.title}}</b>
+                    <ul class="inline">
+                      <li v-for="techItem in tech.content">{{techItem}}</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -181,7 +201,21 @@
                   <div class="title">{{item.title}}</div>
                   <div class="description">{{item.intro}}</div>
                 </div>
-                <div class="col-md-7" v-html="item.description"></div>
+                <div class="col-md-7">
+                  <div class="content">{{item.description}}</div>
+                  <div class="tips" v-for="tip in item.tips">
+                    <b>{{tip.title}}</b>
+                    <ul>
+                      <li v-for="list in tip.content">{{list}}</li>
+                    </ul>
+                  </div>
+                  <div class="technology" v-for="tech in item.technology">
+                    <b>{{tech.title}}</b>
+                    <ul class="inline">
+                      <li v-for="techItem in tech.content">{{techItem}}</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -279,10 +313,28 @@
         userInfo: {
           exp:[],
           qq:{},
-          intro:[],
-          experience:[],
+          intro:{
+            content:[],
+            technology:{
+              title:'',
+              content:[]
+            }
+          },
+          experience:[{
+            tips:{
+              title:'',
+              content:[],
+            },
+            technology:[],
+          }],
           skill:[],
-          project:[],
+          project:[{
+            tips:{
+              title:'',
+              content:[],
+            },
+            technology:[],
+          }],
           usually:[],
         },
       }
