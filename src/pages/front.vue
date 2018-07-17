@@ -3,7 +3,7 @@
     <div class="useful-link no-print">
       <!--<a class="theme-link" href="/index2.html"></a>-->
       <a class="github-button" href="https://github.com/eternityspring/eternityspring.github.io" title="查看源码">
-        <img src="/static/images/star.svg" alt="Github"><span>Star</span>
+        <img src="../../public/img/star.svg" alt="Github"><span>Star</span>
       </a>
     </div>
     <section class="section section-header">
@@ -13,7 +13,7 @@
         <header class="header">
           <div class="header-box">
             <div class="avatar wow inShow no-print">
-              <img src="/static/images/logo.jpg" alt="logo" class="img-responsive">
+              <img src="../../public/img/logo.jpg" alt="logo" class="img-responsive">
             </div>
             <h1 class="name text-center wow inShow no-print">{{userInfo.nickname}}</h1>
             <h1 class="name text-center hide show-print-block">{{userInfo.name}}</h1>
@@ -99,12 +99,12 @@
         </header>
         <div class="section-content">
           <div class="intro">
-            <p v-for="intro in userInfo.intro.content" v-html="intro"></p>
+            <p v-for="(intro,idx) in userInfo.intro.content" :key="idx" v-html="intro"></p>
           </div>
           <div class="technology">
             <ul class="inline">
               <li><b>{{userInfo.intro.technology.title}}</b></li>
-              <li v-for="item in userInfo.intro.technology.content">{{item}}</li>
+              <li v-for="item in userInfo.intro.technology.content" :key="item">{{item}}</li>
             </ul>
           </div>
         </div>
@@ -124,7 +124,7 @@
         </header>
         <div class="section-content">
           <div class="experience">
-            <div class="item" v-for="item in userInfo.experience">
+            <div class="item" v-for="item in userInfo.experience" :key="item.title">
               <div class="row">
                 <div class="col-md-5">
                   <div class="time">{{item.time}}</div>
@@ -133,16 +133,16 @@
                 </div>
                 <div class="col-md-7">
                   <div class="content">{{item.description}}</div>
-                  <div class="tips" v-for="tip in item.tips">
+                  <div class="tips" v-for="tip in item.tips" :key="tip.title">
                     <b>{{tip.title}}</b>
                     <ul>
-                      <li v-for="list in tip.content">{{list}}</li>
+                      <li v-for="list in tip.content" :key="list">{{list}}</li>
                     </ul>
                   </div>
-                  <div class="technology" v-for="tech in item.technology">
+                  <div class="technology" v-for="tech in item.technology" :key="tech.title">
                     <b>{{tech.title}}</b>
                     <ul class="inline">
-                      <li v-for="techItem in tech.content">{{techItem}}</li>
+                      <li v-for="techItem in tech.content" :key="techItem">{{techItem}}</li>
                     </ul>
                   </div>
                 </div>
@@ -166,13 +166,13 @@
         </header>
         <div class="section-content">
           <div class="row skill">
-            <div class="col-md-6" v-for="s in userInfo.skill">
+            <div class="col-md-6" v-for="skill in userInfo.skill" :key="skill.name">
               <div class="item">
                 <div class="text-info">
-                  <span class="num text-light">{{s.percent}}</span>{{s.name}}
+                  <span class="num text-light">{{skill.percent}}</span>{{skill.name}}
                 </div>
                 <div class="progress">
-                  <div class="progress-bar wow progressShow" :style="'width:'+s.percent"></div>
+                  <div class="progress-bar wow progressShow" :style="'width:'+skill.percent"></div>
                 </div>
               </div>
             </div>
@@ -194,7 +194,7 @@
         </header>
         <div class="section-content">
           <div class="experience">
-            <div class="item" v-for="item in userInfo.project">
+            <div class="item" v-for="item in userInfo.project" :key="item.title">
               <div class="row">
                 <div class="col-md-5">
                   <div class="time">{{item.time}}</div>
@@ -203,16 +203,16 @@
                 </div>
                 <div class="col-md-7">
                   <div class="content">{{item.description}}</div>
-                  <div class="tips" v-for="tip in item.tips">
+                  <div class="tips" v-for="tip in item.tips" :key="tip.title">
                     <b>{{tip.title}}</b>
                     <ul>
-                      <li v-for="list in tip.content">{{list}}</li>
+                      <li v-for="list in tip.content" :key="list">{{list}}</li>
                     </ul>
                   </div>
-                  <div class="technology" v-for="tech in item.technology">
+                  <div class="technology" v-for="tech in item.technology" :key="tech.title">
                     <b>{{tech.title}}</b>
                     <ul class="inline">
-                      <li v-for="techItem in tech.content">{{techItem}}</li>
+                      <li v-for="(techItem,techItemIndex) in tech.content" :key="techItemIndex">{{techItem}}</li>
                     </ul>
                   </div>
                 </div>
@@ -236,16 +236,16 @@
         </header>
         <div class="section-content">
           <div class="row usually">
-            <div class="col-lg-4 col-md-6" v-for="u in userInfo.usually">
-              <a v-if="u.link" :href="u.link" target="_blank" class="item" :title="u.link">
+            <div class="col-lg-4 col-md-6" v-for="(usually,usuallyIndex) in userInfo.usually" :key="usuallyIndex">
+              <a v-if="usually.link" :href="usually.link" target="_blank" class="item" :title="usually.link">
                 <i class="fa fa-github"></i>
-                <h3 class="text-light">{{u.name}}</h3>
-                <p>{{u.description}}</p>
+                <h3 class="text-light">{{usually.name}}</h3>
+                <p>{{usually.description}}</p>
               </a>
-              <div v-if="!u.link" class="item" :title="u.link">
+              <div v-if="!usually.link" class="item" :title="usually.link">
                 <i class="fa fa-github"></i>
-                <h3 class="text-light">{{u.name}}</h3>
-                <p>{{u.description}}</p>
+                <h3 class="text-light">{{usually.name}}</h3>
+                <p>{{usually.description}}</p>
               </div>
             </div>
           </div>
@@ -341,8 +341,8 @@
     },
     created(){
       var self = this;
-      this.$http.get('/static/resume.json').then((res) =>{
-        self.userInfo = res.body;
+      this.$http.get('resume.json').then((res) =>{
+        self.userInfo = res.data;
         this.$parent.loading = true;
       });
     },

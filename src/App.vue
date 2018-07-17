@@ -16,17 +16,21 @@
         </rect>
       </svg>
     </div>
-    <router-view loadingStatus="loading" />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app',
-  data(){
-    return {
-      loading:false,
+  export default {
+    name: 'app',
+    data(){
+      return {
+        loading:false,
+      }
     }
   }
-}
 </script>
+
+<style lang="scss">
+  @import "./scss/style.scss";
+</style>
