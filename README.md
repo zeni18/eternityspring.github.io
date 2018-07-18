@@ -1,3 +1,5 @@
+### 在线预览
+[https://eternityspring.github.io/dist/](https://eternityspring.github.io/dist/)
 ## 源泉
 ~~一个追求专业的前端开发者。~~
 
@@ -14,8 +16,6 @@ clone项目
 访问：http://localhost:8080/
 ### 制作自己的简历
 找到resume.json文件，按照自己的情况修改相应的信息即可。
-### 在线预览
-[https://eternityspring.github.io/dist/](https://eternityspring.github.io/dist/)
 ### 打印预览
 打开上述链接，在浏览器中按
     ctrl+p
