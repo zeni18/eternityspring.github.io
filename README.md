@@ -8,12 +8,12 @@ clone项目，进入dev分支
 
     npm install
 ### 运行
-    npm dev
+    npm serve
 ### 编译
     npm build
 访问：http://localhost:8080/
 ### 制作自己的简历
-clone项目，进入master分支。在static目录下找到resume.json文件，按照自己的情况修改相应的信息即可。
+找到resume.json文件，按照自己的情况修改相应的信息即可。
 ### 在线预览
 [https://eternityspring.github.io](https://eternityspring.github.io)
 ### 打印预览
