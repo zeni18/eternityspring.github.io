@@ -7,7 +7,7 @@
   "nickname":"源泉",
   "firstName":"wang",
   "lastName":"wesley",
-  "slogan":"追求专业与卓越前端开发者",
+  "slogan":"'吹毛求疵'的互联网从业者",
   "tips":"Ctrl+p可以印本简历，打印时显示真名",
   "education":"专科",
   "phone":15001827426,
@@ -20,11 +20,11 @@
   "email":"eternityspring@gmail.com",
   "intro":{
     "content":[
-      "4年＋的一线城市研发经验。做过些许优化工作流的小工具。",
-      "熟悉前端项目构建，有过基于 angular 和 vue 的产品开发经验。",
-      "喜欢开源，懂产品，会设计。可以做 node.js 后端。熟悉和习惯 restful 的开发模式和基于git的版本管理。",
-      "熟悉 vue 和 angular1.x。常用 scss 和 webpack。爱折腾。没事喜欢做做小东西。",
-      "有做过小程序“黄龙客栈”和 hybrid APP。"
+      "4年＋的一线城市研发经验。自发的独立做过些许优化工作流的小工具。",
+      "熟悉前端项目构建，有过基于 angular 和 vue 的产品开发经验，以及微信小程序和微信公众号开发经验。",
+      "喜欢开源，热爱产品，会设计。可以做 node.js 后端。熟悉 restful 的开发模式和基于git的版本管理。习惯 PDCA 式的小步快跑工作流。",
+      "精通 vue 和 angular1.x。常用 scss。爱折腾。没事喜欢做做小东西。",
+      "颇为丰富的 BS架构 web应用开发经验。"
     ],
     "technology":{
       "title":"用过的技术栈：",
@@ -35,10 +35,10 @@
   },
   "experience":[
     {
-      "time":"2018.03-today",
+      "time":"2018.03-2019.01",
       "title":"尚德机构（武汉）",
       "intro":"前端开发",
-      "description":"转战武汉，进入尚德机构，做一些内部员工使用的管理系统。",
+      "description":"转战武汉，进入尚德机构，做一些内部员工使用的管理系统，hr使用的招聘入职系统。",
       "tips":[
         {
           "title":"主要业绩：",
@@ -66,13 +66,13 @@
         {
           "title":"主要业绩：",
           "content":[
+            "从4人小团队中脱颖而出做到了小组长",
             "主导推动项目用 vue 重构。",
             "在工作之余对 vue 和 react 等新技术做了一些调研和考量。",
             "梳理工作流，并优化团队间相互协作沟通成本。",
             "规划和实现了整个前端的研发到交付流程的的优化。实现前后端分离。",
             "做一些技术分享，和一些自发制作的提测小工具。",
-            "协同一个后端同事做了运营管理平台的部分重构。",
-            "和同事并肩奋战，从起初的项目进度慢到天天加班，一两个月后每位同事都能熟悉理解新的工作流，并在不加班的情况下完成了更多的工作量。"
+            "和同事并肩奋战，从起初的项目进度慢到天天加班，经过一两个月优化后，每位同事都能熟悉理解新的工作流，并在不加班的情况下完成了更多的工作量。"
           ]
         }
       ],
@@ -128,15 +128,19 @@
   "skill":[
     {
       "name":"Css",
-      "percent":"90%"
+      "percent":"95%"
     },
     {
-      "name":"PhotoShop",
-      "percent":"80%"
+      "name":"Axure",
+      "percent":"75%"
     },
     {
       "name":"JavaScript",
       "percent":"85%"
+    },
+    {
+      "name":"PhotoShop",
+      "percent":"80%"
     },
     {
       "name":"Node.js",
@@ -151,24 +155,44 @@
       "percent":"95%"
     },
     {
-      "name":"Angular1.x",
-      "percent":"75%"
-    },
-    {
       "name":"Vue",
       "percent":"90%"
     }
   ],
   "project":[
     {
-      "time":"2017.06-2018.03",
-      "title":"中科金服",
-      "intro":"一个B2P的借贷平台。",
-      "description":"一个金融平台正常维护，包括优惠券体验金以及各种不同产品的迭代。以及各种活动页面的制作和实现。",
+      "time":"2018.03-2018.07",
+      "title":"尚德机构",
+      "intro":"一个销售统计分析工具。",
+      "description":"一个销售情况的统计分析平台的前端架构设计和迭代实现。",
       "tips":[
         {
           "title":"实现的主要功能：",
           "content":[
+            "录入系统",
+            "分析对比报表"
+          ]
+        }
+      ],
+      "technology":[
+        {
+          "title":"技术栈：",
+          "content":[
+            "node.js","vue","scss","webpack","element-ui"
+          ]
+        }
+      ]
+    },
+    {
+      "time":"2017.06-2018.03",
+      "title":"中科金服",
+      "intro":"一个B2P的借贷平台和一个后台管理系统",
+      "description":"一个金融平台正常维护，包括优惠券体验金以及各种不同产品的迭代和重构。以及各种活动页面的制作和实现。协调前端小组工作和工作流的优化。",
+      "tips":[
+        {
+          "title":"实现的主要功能：",
+          "content":[
+            "管理后台",
             "加息券、体验金",
             "亲子标",
             "定融计划",
@@ -189,8 +213,8 @@
     {
       "time":"自毕业后",
       "title":"个人网站",
-      "intro":"全栈开发的学习与研究",
-      "description":"自毕业后创建与维护一个个人网站。在学nodejs之前，是基于drupal做的。自己独立开发的主题，广受欢迎。在学习了nodejs后，后端基于nodejs的express和Mongodb，前端基于angularjs和bootstrap使用restful风格重做了一遍。历时1年。整个网站的迭代是我整个技术栈成长的缩影。",
+      "intro":"全栈开发的学习与研究,部署于阿里云",
+      "description":"自毕业后创建与维护一个个人网站。在学 nodejs 之前，是基于 drupal 做的。自己独立开发的主题，广受欢迎。在学习了nodejs后，后端基于 nodejs 的 express 和 Mongodb，前端基于 angularjs 和 bootstrap 使用 restful 风格重做了一遍。历时1年。整个网站的迭代是我整个技术栈成长的缩影。目前正在用Vue重构设计。",
       "tips":[
         {
           "title":"实现的主要功能：",
@@ -206,7 +230,7 @@
         {
           "title":"技术栈：",
           "content":[
-            "node.js","angular","scss","gulp","bootstrap","express","mongodb"
+            "node.js","angular","scss","gulp","bootstrap","express","mongodb","vue","Axure"
           ]
         }
       ]
