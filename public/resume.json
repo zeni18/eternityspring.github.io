@@ -7,7 +7,7 @@
   "nickname":"源泉",
   "firstName":"wang",
   "lastName":"wesley",
-  "slogan":"'吹毛求疵'的互联网从业者",
+  "slogan":"不懂设计的好前端不是好产品",
   "tips":"Ctrl+p可以印本简历，打印时显示真名",
   "education":"专科",
   "phone":15001827426,
@@ -20,16 +20,17 @@
   "email":"eternityspring@gmail.com",
   "intro":{
     "content":[
-      "4年＋的一线城市研发经验。自发的独立做过些许优化工作流的小工具。",
-      "熟悉前端项目构建，有过基于 angular 和 vue 的产品开发经验，以及微信小程序和微信公众号开发经验。",
-      "喜欢开源，热爱产品，会设计。可以做 node.js 后端。熟悉 restful 的开发模式和基于git的版本管理。习惯 PDCA 式的小步快跑工作流。",
-      "精通 vue 和 angular1.x。常用 scss。爱折腾。没事喜欢做做小东西。",
-      "颇为丰富的 BS架构 web应用开发经验。"
+      "6年+工作经验。4年＋的一线城市前端研发经验，其中包括一年带团队经验。能搭建持续集成的开发环境。武汉工作一年，半年产品工作经验。",
+      "有个人网站。熟悉前端项目构建，有过基于 angular1.x 和 vue 的产品开发经验，以及微信小程序和微信公众号开发经验。自发的独立做过些许优化工作流的小工具。",
+      "喜欢开源，热爱产品，会设计。用 node.js 做过后端。熟悉 restful 的开发模式和基于git的版本管理。习惯 PDCA 式的小步快跑工作流。",
+      "言语思考，爱折腾。精通 vue 和 angular1.x。常用 scss。爱折腾。没事喜欢做做小东西。",
+      "颇为丰富的 BS架构 web应用开发经验。有着浓厚的对产品设计的兴趣和对良好用户体验的精益求精精神。",
+      "<b>希望凭借多年互联网从业经验，最终能够成为一个优秀的产品。</b>"
     ],
     "technology":{
-      "title":"用过的技术栈：",
+      "title":"技术栈和工具：",
       "content":[
-        "scss","bootstrap","vue","gulp","node.js","angular","express","mongodb","webpack","ionic"
+        "scss","bootstrap","vue","gulp","node.js","angular","express","mongodb","webpack","ionic","photoshop","axure"
       ]
     }
   },
@@ -38,7 +39,7 @@
       "time":"2018.03-2019.01",
       "title":"尚德机构（武汉）",
       "intro":"前端开发",
-      "description":"转战武汉，进入尚德机构，做一些内部员工使用的管理系统，hr使用的招聘入职系统等。",
+      "description":"转战武汉，进入尚德机构，做一些内部员工使用的管理系统，hr使用的招聘入职系统等。有参与一些活动策划和营销页策划。",
       "tips":[
         {
           "title":"主要业绩：",
@@ -53,7 +54,7 @@
         {
           "title":"技术栈：",
           "content":[
-            "node.js","vue","element-ui","scss","webpack","bootstrap"
+            "node.js","vue","element-ui","scss","webpack","bootstrap","axure","小程序"
           ]
         }
       ]
@@ -297,7 +298,12 @@
     {
       "name":"知乎",
       "link":"https://www.zhihu.com/people/790313188",
-      "description":"搜索解决一些疑问 探索新奇"
+      "description":"探索新奇 关注互联网用户的关注热点"
+    },
+    {
+      "name":"人人都是产品经理",
+      "link":"http://www.woshipm.com",
+      "description":"学习产品思路 锻炼良好用户体验的思维模式"
     },
     {
       "name":"MDN",
@@ -306,11 +312,6 @@
     },
     {
       "name":"Behance",
-      "description":"寻找灵感探索新奇"
-    },
-    {
-      "name":"Dribbble",
-      "link":"https://dribbble.com/eternityspring",
       "description":"寻找灵感探索新奇"
     },
     {
